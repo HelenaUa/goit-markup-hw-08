@@ -2,11 +2,23 @@
 .clients {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.clients__item {
+    @media screen and (min-width: 768px) {
+    width: calc((100% - 30px)/2);
+    }
+    
+    @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px)/4);
+    }
 }
 
 .clients__link {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 92px;
     justify-content: center;
     align-items: center;
@@ -16,6 +28,14 @@
     fill: #afb1b8;
 
     transition: fill var(--animation), border var(--animation);
+
+    @media screen and (min-width: 768px) {
+    width: 226px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    width: 170px;
+    }
 
 &:hover,
 &:focus {
