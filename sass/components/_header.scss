@@ -1,0 +1,112 @@
+/*Header*/
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu {
+    margin-left: 93px;
+    margin-right: auto;
+}
+
+.header-nav__link {
+    position: relative;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--main-txt-cl);
+
+    transition: color var(--animation);
+}
+
+.header-nav__link--active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -33px;
+
+    display: block;
+    height: 4px;
+    width: 100%;
+
+    background-color: var(--accent-txt-cl);
+    border-radius: 2px;
+    border: transparent;
+}
+
+.header-nav__link:hover,
+.header-nav__link:focus,
+.header-nav__link--active {
+    color: var(--accent-txt-cl);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-contact__item {
+    display: flex;
+    gap: 10px;
+}
+
+.header-contact__link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--light-txt-cl);
+    list-style: none;
+    text-decoration: none;
+
+    transition: color var(--animation);
+
+&:hover,
+&:focus {
+    color: var(--accent-txt-cl);
+    fill: var(--accent-txt-cl);
+}
+}
+
+.header-contact__icon-envelope {
+    display: flex;
+    width: 16px;
+    height: 12px;
+    justify-content: center;
+    align-items: center;
+    fill: var(--light-txt-cl);
+    fill: currentColor;
+}
+
+.header-contact__icon-smartphone {
+    display: flex;
+    width: 10px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    fill: var(--light-txt-cl);
+    fill: currentColor;
+}
