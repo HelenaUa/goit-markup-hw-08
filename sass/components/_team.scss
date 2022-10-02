@@ -6,6 +6,7 @@
 .team {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .team__item {
