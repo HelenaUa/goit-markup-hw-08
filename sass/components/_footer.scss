@@ -4,7 +4,7 @@
     background-color: var(--accent-bg-cl);
     
     @media screen and (min-width: 768px) {
-            padding-top: 0;
+            padding-top: 65px;
         }
 }
 
@@ -26,8 +26,7 @@
     display: flex;
     flex-direction: row;
     gap: 165px;
-
-    padding-top: 65px;
+    
 }
 
 @media screen and (min-width: 1200px) {
@@ -140,7 +139,7 @@ justify-content: center;
 
 .form-subscribe {
     display: flex;
-    gap: 12px;
+
 flex-direction: column;
 align-items: center;
 
