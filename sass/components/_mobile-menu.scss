@@ -51,6 +51,8 @@
     margin-bottom: 32px;
 }
 
+
+
 .mobile-contacts__link-tel {
     font-weight: 500;
     font-size: 34px;
@@ -71,13 +73,14 @@
 
 .mobile-socials {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     margin-left: 0;
 
 }
 
-.mobile-socials__item {
-
+.mobile-socials__item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, .2);
 }
 
 .mobile-socials__link {

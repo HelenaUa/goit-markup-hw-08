@@ -1,18 +1,18 @@
 /*Header*/
 .header {
-    width: 480px;
-    height: 60px;
+    // width: 480px;
+    // height: 60px;
 
     display: block;
     align-items: center;
 
 @media screen and (min-width: 768px) {
-    width: 768px; 
+    
     height: 80px;   
     border-bottom: 1px solid #ececec;
     }
     @media screen and (min-width: 1200px) {
-    width: 1200px;
+    
     height: 80px;
     border-bottom: 1px solid #ececec;
     }
@@ -29,7 +29,7 @@
     height: 40px;
     padding: 0;
     margin-left: auto;
-    margin-left: 276px;
+    // margin-left: 276px;
 
     background-color: rgba(0, 0, 0, 0);
     border: none;
@@ -45,8 +45,10 @@
     display: flex;
 flex-direction: row;
 align-items: center;
+height: 60px;
+
     @media screen and (min-width: 768px) {
-            
+            height: 80px;
             align-items: center;
         }
     
@@ -170,10 +172,11 @@ align-items: center;
     display: none;
 
 @media screen and (min-width: 768px) {
-       display: flex;
-       flex-direction: column;
-       gap: 10px;
-       margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    
     }
 
 @media screen and (min-width: 1200px) {
@@ -184,14 +187,14 @@ align-items: center;
         list-style: none;
         margin: 0px;
         padding: 0px;
-        margin-left: 315px;
+        // margin-left: 315px;
     }
 }
 
 .header-contact__item {
     display: none;
     @media screen and (min-width: 768px) {
-            display: flex;
+            display: block;
         }
     
         @media screen and (min-width: 1200px) {
