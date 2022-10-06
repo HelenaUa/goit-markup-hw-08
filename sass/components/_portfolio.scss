@@ -16,7 +16,7 @@
         }
 
         @media screen and (min-width: 1200px) {
-        width: calc((100% - 90px)/3);
+        width: calc((100% - 60px)/3);
         }
 }
 
@@ -25,7 +25,9 @@
 
     overflow: hidden;
 
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     text-decoration: none;
 
     transition: box-shadow var(--animation);
@@ -37,7 +39,7 @@
 }
 
 .portfolio__title {
-    // margin-bottom: 4px;
+    margin-bottom: 4px;
     color: var(--main-txt-cl);
     font-weight: 700;
     font-size: 18px;
@@ -53,6 +55,8 @@
 }
 
 .portfolio__part-down {
+    // display: flex;
+    flex-grow: 1;
     padding: 20px 24px;
     border-left: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
@@ -62,7 +66,7 @@
 .portfolio__part-up {
     position: relative;
     overflow: hidden;
-    height: 294px;
+    // height: 294px;
 }
 
 .portfolio__text-overlay {

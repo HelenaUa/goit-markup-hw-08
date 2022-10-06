@@ -11,10 +11,20 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
     letter-spacing: 0.03em;
 
     color: var(--main-txt-cl);
+
+    @media screen and (min-width: 768px) {
+            // width: calc(100% - 30px);
+        }
+
+
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+        line-height: calc(23 / 20);
+        }
 }
 
 .register-form-group {
@@ -164,21 +174,31 @@
 
 .register-form-desc {
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
 
     letter-spacing: 0.03em;
     color: var(--light-txt-cl);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: calc(24 / 14);
+        }
 }
 
 .register-form-link {
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
 
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: var(--accent-txt-cl);
+
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: calc(24 / 14);
+        }
 }
 
 .register-form-btn {
